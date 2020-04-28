@@ -10,9 +10,15 @@ import UIKit
 
 private let reuseIdentifier = "ProfileFilterCell"
 
+protocol ProfileFilterViewDelegate: class {
+    func filterView(_ view: ProfileFilterView, didSelect indexPath: IndexPath)
+}
+
 class ProfileFilterView: UIView {
     
     // MARK: - Properties
+    
+    weak var delegate: ProfileFilterViewDelegate?
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -42,8 +48,6 @@ class ProfileFilterView: UIView {
     
 }
 
-
-
 //MARK: - UICollectionViewDataSource
 
 extension ProfileFilterView: UICollectionViewDataSource{
@@ -60,7 +64,9 @@ extension ProfileFilterView: UICollectionViewDataSource{
 //MARK: - UICollectionViewDelegate
 
 extension ProfileFilterView: UICollectionViewDelegate{
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.filterView(self, didSelect: indexPath)
+    }
 }
 
 //MARK: UICollectionViewDelegateFlowLayout

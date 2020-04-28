@@ -14,7 +14,7 @@ class ProfileFilterCell: UICollectionViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .twitterBlue
+        label.textColor = .lightGray
         label.font = UIFont.systemFont(ofSize: 14)
         label.text = "Test Filter" 
         return label

@@ -42,7 +42,6 @@ class FeedController: UICollectionViewController{
     
     func fetchTweets(){
         TweetService.shared.fetchTweets { (tweets) in
-            print("DEBUG: start to fetch")
             self.tweets = tweets
         }
     }

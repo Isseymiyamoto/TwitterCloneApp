@@ -37,6 +37,7 @@
 		85C8BCDE2453D6BD006DC721 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8BCDD2453D6BD006DC721 /* User.swift */; };
 		85C8BCE024541BF0006DC721 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8BCDF24541BF0006DC721 /* UploadTweetController.swift */; };
 		85C8BCE224546140006DC721 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8BCE124546140006DC721 /* CaptionTextView.swift */; };
+		85DBBBC3245BD5F800667EFD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBBBC2245BD5F800667EFD /* UserCell.swift */; };
 		85F42995244B209E00718FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F42994244B209E00718FFC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		85C8BCDD2453D6BD006DC721 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		85C8BCDF24541BF0006DC721 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		85C8BCE124546140006DC721 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		85DBBBC2245BD5F800667EFD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		85F42994244B209E00718FFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9187BAF0F5DF5800B4CE5587 /* Pods_TwitterClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 				857BF37324567DD100703F2D /* ProfileHeader.swift */,
 				857BF3752456DEA900703F2D /* ProfileFilterView.swift */,
 				857BF3772456E15000703F2D /* ProfileFilterCell.swift */,
+				85DBBBC2245BD5F800667EFD /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				85C8BCE224546140006DC721 /* CaptionTextView.swift in Sources */,
 				857BF3782456E15000703F2D /* ProfileFilterCell.swift in Sources */,
 				85C2BB9424458447009113EA /* ConversationsController.swift in Sources */,
+				85DBBBC3245BD5F800667EFD /* UserCell.swift in Sources */,
 				8503A2B724478E7900344724 /* Utilities.swift in Sources */,
 				85C2BB8C2445804B009113EA /* MainTabController.swift in Sources */,
 				85C2BB972446D8CE009113EA /* Extensions.swift in Sources */,

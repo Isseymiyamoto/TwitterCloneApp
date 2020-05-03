@@ -41,7 +41,7 @@ class ExploreController: UITableViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
         navigationController?.navigationBar.barStyle = .default
         navigationController?.navigationBar.isHidden = false
@@ -59,7 +59,6 @@ class ExploreController: UITableViewController{
     func configureUI(){
         view.backgroundColor = .white
         navigationItem.title = "Explore"
-        
         tableView.register(UserCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 60
         tableView.separatorStyle = .none
@@ -69,6 +68,8 @@ class ExploreController: UITableViewController{
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
+//        searchController.showsSearchResultsController = true
+        searchController.searchBar.tintColor = .twitterBlue
         searchController.searchBar.placeholder = "Search for a user"
         navigationItem.searchController = searchController
         definesPresentationContext = false

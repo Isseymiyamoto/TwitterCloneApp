@@ -10,6 +10,7 @@ import UIKit
 
 protocol ProfileHeaderDelegate: class {
     func handleDismissal()
+    func handleEditProfile(_ header: ProfileHeader)
 }
 
 class ProfileHeader: UICollectionReusableView{
@@ -171,7 +172,7 @@ class ProfileHeader: UICollectionReusableView{
     }
     
     @objc func handleEdidProfileFollow(){
-        
+        delegate?.handleEditProfile(self)
     }
     
     @objc func handleFollowingTapped(){

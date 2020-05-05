@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdetifier = "TweetCell"
+private let reuseIdentifier = "TweetCell"
 private let headerIdentifier = "ProfileHeader"
 
 class ProfileController: UICollectionViewController{
@@ -73,7 +73,7 @@ class ProfileController: UICollectionViewController{
         // safeAreaの場所までcollectionViewを広げる
         collectionView.contentInsetAdjustmentBehavior = .never
         
-        collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdetifier)
+        collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.register(ProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
     }
 }
@@ -86,7 +86,7 @@ extension ProfileController{
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdetifier, for: indexPath) as! TweetCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TweetCell
         cell.tweet = tweets[indexPath.row]
         return cell
     }

@@ -66,7 +66,6 @@ struct ProfileHeaderViewModel {
         attributedTitle.append(NSAttributedString(string: "\(text)",
                                                   attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14),
                                                                NSAttributedString.Key.foregroundColor: UIColor.lightGray]))
-        
         return attributedTitle
     }
 }

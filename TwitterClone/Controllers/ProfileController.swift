@@ -172,7 +172,10 @@ extension ProfileController: ProfileHeaderDelegate {
         
         
         if user.isCurrentUser{
-            print("DEBUG: show edit profile controller..")
+            let controller = EditProfileController(user: user)
+            let nav = UINavigationController(rootViewController: controller)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true, completion: nil)
             return
         }
         

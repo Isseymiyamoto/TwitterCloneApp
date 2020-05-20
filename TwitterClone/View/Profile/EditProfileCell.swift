@@ -40,11 +40,11 @@ class EditProfileCell: UITableViewCell{
         return tf
     }()
     
-    let bioTextView: UITextView = {
-        let tv = UITextView()
+    let bioTextView: CaptionTextView = {
+        let tv = CaptionTextView()
         tv.font = UIFont.systemFont(ofSize: 14)
         tv.textColor = .twitterBlue
-        // placeholderに bio を入れる
+        tv.placeholderLable.text = "bio"
         return tv
     }()
     
@@ -65,6 +65,8 @@ class EditProfileCell: UITableViewCell{
         addSubview(bioTextView)
         bioTextView.anchor(top: topAnchor, left: titleLabel.rightAnchor, bottom: bottomAnchor, right: rightAnchor,
                            paddingTop: 4, paddingLeft: 16, paddingRight: 8)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleUpdateUserInfo), name: UITextView.textDidEndEditingNotification, object: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -76,6 +78,7 @@ class EditProfileCell: UITableViewCell{
     @objc func handleUpdateUserInfo(){
         delegate?.updateUserInfo(self)
     }
+   
     
     // MARK: - Helpers
     

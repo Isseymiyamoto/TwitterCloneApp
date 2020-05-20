@@ -95,6 +95,9 @@ extension EditProfileController{
         
         cell.delegate = self
         
+        guard let option = EditProfileOptions(rawValue: indexPath.row) else { return cell }
+        cell.viewModel = EditProfileViewModel(user: user, option: option)
+        
         return cell
     }
 }
@@ -135,8 +138,10 @@ extension EditProfileController: EditProfileCellDelagate{
             guard let username = cell.infoTextField.text else { return }
             user.username = username
         case .bio:
-            print("DEBUG: update user bio")
+            user.bio = cell.bioTextView.text
         }
+        
+        print("DEBUG: fullname is \(user.fullname)")
         
     }
 }

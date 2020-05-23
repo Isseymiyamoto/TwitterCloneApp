@@ -52,6 +52,7 @@
 		85C8BCE024541BF0006DC721 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8BCDF24541BF0006DC721 /* UploadTweetController.swift */; };
 		85C8BCE224546140006DC721 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8BCE124546140006DC721 /* CaptionTextView.swift */; };
 		85DBBBC3245BD5F800667EFD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBBBC2245BD5F800667EFD /* UserCell.swift */; };
+		85EF832224787502004C3801 /* EditProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF832124787502004C3801 /* EditProfileFooter.swift */; };
 		85F42995244B209E00718FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F42994244B209E00718FFC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		85C8BCDF24541BF0006DC721 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		85C8BCE124546140006DC721 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
 		85DBBBC2245BD5F800667EFD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		85EF832124787502004C3801 /* EditProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileFooter.swift; sourceTree = "<group>"; };
 		85F42994244B209E00718FFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9187BAF0F5DF5800B4CE5587 /* Pods_TwitterClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				857BF3772456E15000703F2D /* ProfileFilterCell.swift */,
 				850EE550247408F800472D50 /* EditProfileHeader.swift */,
 				850EE556247414BA00472D50 /* EditProfileCell.swift */,
+				85EF832124787502004C3801 /* EditProfileFooter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				8516D6092469148B0025CD34 /* ActionSheetViewModel.swift in Sources */,
 				857915F724702784004A0E65 /* NotificationCell.swift in Sources */,
 				850EE5532474141500472D50 /* EditProfileViewModel.swift in Sources */,
+				85EF832224787502004C3801 /* EditProfileFooter.swift in Sources */,
 				85C2BB9C2447029D009113EA /* RegistrationController.swift in Sources */,
 				85C2BB8E244583D1009113EA /* FeedController.swift in Sources */,
 				857BF3762456DEA900703F2D /* ProfileFilterView.swift in Sources */,

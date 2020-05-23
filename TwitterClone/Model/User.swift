@@ -27,7 +27,10 @@ struct User {
         self.fullname = dictionaty["fullname"] as? String ?? ""
         self.email = dictionaty["email"] as? String ?? ""
         self.username = dictionaty["username"] as? String ?? ""
-        self.bio = dictionaty["bio"] as? String ?? ""
+        
+        if let bio = dictionaty["bio"] as? String{
+            self.bio = bio
+        }
     
         if let profileImageUrlString = dictionaty["profileImageUrl"] as? String{
             guard let url = URL(string: profileImageUrlString) else { return}

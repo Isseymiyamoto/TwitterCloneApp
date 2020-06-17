@@ -148,7 +148,7 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        var height: CGFloat = 300
+        var height: CGFloat = 360
         
         if user.bio != nil{
             height += 40
